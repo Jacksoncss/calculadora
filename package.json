@@ -1,0 +1,12 @@
+{
+  "name": "calculadora-online",
+  "version": "1.0.0",
+  "description": "Calculadora online com pipeline CI/CD no GitHub Actions",
+  "scripts": {
+    "test": "jest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
