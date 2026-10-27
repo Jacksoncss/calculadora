@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;600&family=Chivo:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculadora" aria-label="Calculadora">
+    <div class="visor">
+      <div class="visor-conta" id="conta" aria-hidden="true"></div>
+      <output class="visor-valor" id="valor" aria-live="polite">0</output>
+    </div>
+
+    <div class="teclas">
+      <button class="tecla tecla-func" data-acao="limpar">C</button>
+      <button class="tecla tecla-func" data-acao="sinal" aria-label="Inverter sinal">±</button>
+      <button class="tecla tecla-func" data-acao="porcentagem" aria-label="Porcentagem">%</button>
+      <button class="tecla tecla-op" data-op="/" aria-label="Dividir">÷</button>
+
+      <button class="tecla" data-num="7">7</button>
+      <button class="tecla" data-num="8">8</button>
+      <button class="tecla" data-num="9">9</button>
+      <button class="tecla tecla-op" data-op="*" aria-label="Multiplicar">×</button>
+
+      <button class="tecla" data-num="4">4</button>
+      <button class="tecla" data-num="5">5</button>
+      <button class="tecla" data-num="6">6</button>
+      <button class="tecla tecla-op" data-op="-" aria-label="Subtrair">−</button>
+
+      <button class="tecla" data-num="1">1</button>
+      <button class="tecla" data-num="2">2</button>
+      <button class="tecla" data-num="3">3</button>
+      <button class="tecla tecla-op" data-op="+" aria-label="Somar">+</button>
+
+      <button class="tecla" data-num="0">0</button>
+      <button class="tecla" data-acao="decimal" aria-label="Vírgula">,</button>
+      <button class="tecla tecla-func" data-acao="apagar" aria-label="Apagar">⌫</button>
+      <button class="tecla tecla-igual" data-acao="igual" aria-label="Igual">=</button>
+    </div>
+  </main>
+
+  <script src="calculator.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
